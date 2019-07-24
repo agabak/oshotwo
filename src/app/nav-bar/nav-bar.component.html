@@ -1,25 +1,23 @@
-<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Shopping Cart</a>
-      </li>
-      <li class="nav-item dropdown">
-        <div class="nav-link" dropdown>
-          <a id="button-basic" dropdownToggle aria-controls="dropdown-basic">
-            Username <span class="caret"></span>
-          </a>
-          <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
-              role="menu" aria-labelledby="button-basic">
-            <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
-            <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
-            <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
-            <li class="divider dropdown-divider"></li>
-            <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
-            </li>
-          </ul>
-        </div>
-      </li>
-    </ul>
-  </div>
-</nav>
+<nav class="navbar navbar-expand-md navbar-light bg-light mb-4">
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="['/home']" routerLinkActive="router-link-active">Shopping Cart</a>
+        </li>
+        <li class="nav-item dropdown">
+            <div class="nav-link" dropdown>
+              <a id="button-basic" dropdownToggle aria-controls="dropdown-basic">
+                Username <span class="caret"></span>
+              </a>
+              <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+                  role="menu" aria-labelledby="button-basic">
+                <li role="menuitem"><a class="dropdown-item" href="#">My Orders</a></li>
+                <li role="menuitem"><a class="dropdown-item" href="#">Manager Orders</a></li>
+                <li role="menuitem"><a class="dropdown-item" href="#">Manager Products</a></li>
+                <li role="menuitem"><a class="dropdown-item" href="#">Log Out</a></li>
+              </ul>
+            </div>
+          </li>
+      </ul>
+    </div>
+  </nav>
